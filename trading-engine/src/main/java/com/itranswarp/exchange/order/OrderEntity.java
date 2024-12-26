@@ -25,4 +25,10 @@ public class OrderEntity {
     public long createAt;
     public long updateAt;
 
+    public void updateOrder(BigDecimal unfilledQuantity, OrderStatus status, long updatedAt) {
+        this.unfilledQuantity = unfilledQuantity;
+        this.orderStatus = status;
+        this.updateAt = updatedAt;
+    }
+
 }
