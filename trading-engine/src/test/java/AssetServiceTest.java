@@ -1,9 +1,9 @@
-import com.itranswarp.exchange.AssetEnum;
 import com.itranswarp.exchange.assets.AssetService;
 import com.itranswarp.exchange.assets.Transfer;
 
 import java.math.BigDecimal;
 
+import com.itranswarp.exchange.enums.AssetEnum;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

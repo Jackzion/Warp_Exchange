@@ -1,4 +1,4 @@
-package com.itranswarp.exchange;
+package com.itranswarp.exchange.enums;
 
 public enum AssetEnum {
 
@@ -8,4 +8,3 @@ public enum AssetEnum {
 
     public static final int SCALE = 2;
 }
-

@@ -1,7 +1,7 @@
 package com.itranswarp.exchange.assets;
 
-import com.itranswarp.exchange.AssetEnum;
 import com.itranswarp.exchange.LoggerSupport;
+import com.itranswarp.exchange.enums.AssetEnum;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentMap;
 public class AssetService extends LoggerSupport {
 
     // userID -> map(assetEnum -> asset[available/frozen])
-    public final ConcurrentMap<Long,ConcurrentMap<AssetEnum,Asset>> userAssets = new ConcurrentHashMap<>();
+    public final ConcurrentMap<Long, ConcurrentMap<AssetEnum,Asset>> userAssets = new ConcurrentHashMap<>();
 
     public Asset getAsset(Long userID , AssetEnum assetEnum){
         ConcurrentMap<AssetEnum, Asset> assets = userAssets.get(userID);

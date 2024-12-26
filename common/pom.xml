@@ -71,4 +71,17 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>none</mainClass> <!-- 取消查找本项目下的Main方法 -->
+                    <classifier>exec</classifier> <!-- 确保生成的可执行jar文件名正确 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
