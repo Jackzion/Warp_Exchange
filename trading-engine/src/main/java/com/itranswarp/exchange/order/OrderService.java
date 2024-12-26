@@ -3,11 +3,13 @@ package com.itranswarp.exchange.order;
 import com.itranswarp.exchange.assets.AssetService;
 import com.itranswarp.exchange.enums.AssetEnum;
 import com.itranswarp.exchange.enums.Direction;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+@Component
 public class OrderService {
     final AssetService assetService;
 

@@ -5,6 +5,7 @@ import com.itranswarp.exchange.enums.OrderStatus;
 
 import java.math.BigDecimal;
 
+// todo : database Entity reference
 public class OrderEntity {
 
     // 订单ID / 定序ID / 用户ID:

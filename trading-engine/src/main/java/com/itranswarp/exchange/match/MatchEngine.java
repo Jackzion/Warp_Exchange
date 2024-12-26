@@ -3,9 +3,11 @@ package com.itranswarp.exchange.match;
 import com.itranswarp.exchange.enums.Direction;
 import com.itranswarp.exchange.enums.OrderStatus;
 import com.itranswarp.exchange.order.OrderEntity;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component
 public class MatchEngine {
 
     // 买盘
